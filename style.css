@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(120deg, #f6d365, #ff805d);
+    background-image: linear-gradient(120deg, #7FFFD4, #FFF0F5);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -20,7 +20,7 @@ header, form{
     align-items: center;
 }
 
-form input, form button{
+form input, form button, complete-btn{
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
@@ -28,11 +28,17 @@ form input, form button{
 
 }
 
+form input, form button{
+         border-radius: 50px;
+
+}
+//form button = plus button
 form button{
     color: #ff805d;
     background: white;
-    cursor: pointer;
+    cursor: pointer;s
     transition: all 0.3s ease;
+    
 }
 
 form button:hover{
@@ -129,4 +135,8 @@ select{
 .select:hover::after{
     background: white;
     color: #ff805d;
+}
+.todo-button{
+   background-color: transparent;
+    color: #ff6f47;
 }
